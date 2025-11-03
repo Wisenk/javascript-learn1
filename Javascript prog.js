@@ -1,5 +1,5 @@
 	alert ("hey what's up?");
-		document.write("This is our javascript being written first before anything else");
+		document.write ("This is our javascript being written first before anything else");
 		
 		console.log ("this is text that will be sent directly to the console to let us know that our program completed successfully");
 		
