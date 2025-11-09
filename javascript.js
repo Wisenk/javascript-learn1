@@ -80,3 +80,30 @@ let text1 = "Apple, banana, kiwi";
 let part = text1.slice (3, 14);
 console.log (part);
 
+
+let hour = 12;
+let isWeekend = true;
+
+if (hour < 10 || hour > 18 || isWeekend) {
+  alert ("the office is closed");
+}
+
+
+
+let userName = prompt ("Who's there?");
+
+if (userName  === "Admin") {
+  let pass = prompt ("Password?", "");
+  if (pass === "TheMaster") {
+    alert ("Welcome!");
+  } else if (pass ===  "" || pass === null ) {
+    alert ("Canceled");
+  } else {
+    alert ("Wrong password");
+  }
+
+} else if (userName === "" || userName === null) {
+  alert ("Canceled");
+} else {
+  alert ("I don't know you");
+}
