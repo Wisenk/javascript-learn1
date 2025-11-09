@@ -36,3 +36,47 @@ const myInt = 5;
 const myFloat = 6.667;
 console.log (typeof myInt);
 console.log (typeof myFloat);
+
+	
+
+	const names = "Chris";
+	const greeting = `Hello, ${names}`;
+	console.log (greeting);
+
+
+
+const signButton = document.querySelector("#signButton");
+const log = document.querySelector("#log");
+
+
+signButton.addEventListener("click", () => {
+  let sign = prompt("What's your sign?");
+
+  if (sign === null) {
+    log.innerText = "OK, maybe next time.";
+  } else if (sign.toLowerCase() === "") {
+    log.innerText = "Don't be shy, enter your sign!";
+  } else if (sign.toLowerCase() === "scorpio") {
+    log.innerText = "Wow! I'm a Scorpio too!";
+  } else {
+    log.innerText = `${sign} is my favorite!`;
+  }
+});
+
+
+const newLine = `One day you finally knew
+what you had to do, and began`;
+// if use singular or plural quote, error appears
+console.log (newLine);
+
+const newLine2 = "One day you finally knew \n whay you had to do, and began";
+console.log (newLine2);
+
+let text = "Hello World";
+let char = text.charCodeAt (1);
+console.log (char);
+
+let text1 = "Apple, banana, kiwi";
+let part = text1.slice (3, 14);
+console.log (part);
+
